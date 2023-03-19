@@ -23,3 +23,14 @@ button.addEventListener('click', function(){
   button.classList.add("hide");
   mixInfo(epicMix);
 });
+
+total.innerText = `My Favorite ${epicMix.length} songs.`;
+
+const mixInfo = function(mix) {
+  mix.forEach(function(song, index){
+    let li = document.createElement("li");
+    li.classList.add("song");
+    li.innerHTML = `<span class="song-number">#${index +1}</span> ${song}`;
+    mixList.append(li);
+  });
+};
