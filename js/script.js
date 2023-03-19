@@ -12,4 +12,8 @@ const epicMix = [
   "Vogue",
   "Don't Worry Be Happy",
   "Poker Face"
-]
+];
+
+const mixList = document.querySelector(".mix");
+const button = document.querySelector(".show-list");
+const total = document.querySelector(".total");
