@@ -17,3 +17,9 @@ const epicMix = [
 const mixList = document.querySelector(".mix");
 const button = document.querySelector(".show-list");
 const total = document.querySelector(".total");
+
+button.addEventListener('click', function(){
+  mixList.classList.remove("hide");
+  button.classList.add("hide");
+  mixInfo(epicMix);
+});
